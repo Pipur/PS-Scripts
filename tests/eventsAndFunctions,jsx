@@ -1,0 +1,17 @@
+//target Bridge
+
+var main = function() {
+    var processHotFolder = function() {
+        // $.writeln('Scheduled task')
+        app.beep();
+        kuken = 666
+    }
+
+    id = app.scheduleTask("processHotFolder", 2000, true);
+    $.writeln(id);
+    // $.sleep(3000);
+    // app.cancelTask(id);
+}
+
+main();
+// app.cancelTask(id);
